@@ -23,5 +23,5 @@ steps:
     args: ['build', '-t', 'gcr.io/optimal-moon-374403/siva-velusamy-kgm:$SHORT_SHA', "--build-arg=JAR_FILE=target/hello-spring-1.0.0.jar", "."]
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/optimal-moon-374403/siva-velusamy-kgm:$SHORT_SHA']    
-images: ["us-central1-docker.pkg.dev/$PROJECT_ID/$_REPO_NAME/hellospring1"]
+#images: ["us-central1-docker.pkg.dev/$PROJECT_ID/$_REPO_NAME/hellospring1"]
 # [END cloudbuild_maven]
