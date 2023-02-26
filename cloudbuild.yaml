@@ -29,7 +29,7 @@ steps:
     - '-Dsonar.login=37d33e4d9d4cbcbccb3d36e06e6e37f9bee1a879'
     - '-Dsonar.projectKey=Siva-velusamy-kgm_Spring-Boot-Test'
     - '-Dsonar.organization=siva-velusamy-kgm'
-    - '-Dsonar.sources=.'
+    - '-Dsonar.sources=gcr.io/optimal-moon-374403/siva-velusamy-kgm:$SHORT_SHA'
   - name: 'gcr.io/cloud-builders/gcloud'
     args: ['beta', 'run', 'deploy', 'siva-velusamy-kgm', '--region=us-central1', '--platform=managed', '--image=gcr.io/optimal-moon-374403/siva-velusamy-kgm:$SHORT_SHA']
 #images: ["us-central1-docker.pkg.dev/$PROJECT_ID/$_REPO_NAME/hellospring1"]
